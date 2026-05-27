@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SENAI</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+    width: 400px;
+}
+
+h3{
+    text-align: center;
+    color: rgb(11, 11, 14);
+    margin-bottom: 20px;
+}
+
+label{
+    color: black;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color: blue;
+    background-color: white;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+
+.radio-group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.radio-group input{
+    width: auto;
+}
+
+button{
+    padding: 8px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="reset"]{
+    background-color: red;
+    color: white;
+}
+
+button[type="submit"]{
+    background-color: rgb(8, 5, 190);
+    color: white;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+</style>
+</style>
+</head>
+<body>
+    <form>
+<center>
+   <h3 style="color: blue;"> Incrição SENAI</h3>
+
+<label>Nome Completo:</label>
+<input type="text" 
+placeholder="Somente Letras"
+required><br>
+
+<label>E-mail:</label>
+<input type="text"  
+placeholder="Somente Letras"
+required><br>
+
+<label>Telefone:</label>
+<input type="password" 
+placeholder="Somente Números"
+required><br>
+
+
+<label>Curso Desejado:</label>
+<select required>
+    <option value="">Selecione</option>
+    <option>Tecnologia da Informação</option>
+    <option>Automação e Mecânica</option>
+    <option>Gestão e Segurança</option>
+    <option>ADS (Análise e Desenvolvimento de Sistemas)</option>
+</select><br>
+
+<label>Observações:</label>
+<textarea rows="5" 
+placeholder="Somente Letras"
+required></textarea><br><br>
+
+<button type="submit">Enviar Inscrição</button><br><br>
+<a href="file:///C:/Users/aluno.areias/Downloads/FORMULARIO 1.html">Eu sou aluno!</a>   
+</form>
+</center>
+</body>
+</html>
