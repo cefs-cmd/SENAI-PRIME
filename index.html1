@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário do SENAI</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px green;
+    width: 600px;
+}
+
+h3{
+    text-align: center;
+    color: rgb(11, 11, 14);
+    margin-bottom: 20px;
+}
+
+label{
+    color: black;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color: blue;
+    background-color: white;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+
+.radio-group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.radio-group input{
+    width: auto;
+}
+
+button{
+    padding: 12px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="reset"]{
+    background-color: red;
+    color: white;
+}
+
+button[type="submit"]{
+    background-color: blue;
+    color: white;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<!-- O FORMULÁRIO VAI PARA A PÁGINA agradecimento.html -->
+<form action="agradecimento.html">
+
+<h3>-------------------------------------Dados Pessoais------------------------------------</h3>
+
+<label>Nome Completo:</label>
+<input type="text"
+placeholder="Somente Letras"
+required>
+
+
+
+<label>Data de nascimento:</label>
+<input type="date" 
+placeholder="Somente Números"
+required>
+
+<label>CPF:</label>
+<input type="text"
+pattern="[0-9]{11}"
+placeholder="Somente Números"
+required>
+
+<label>RG:</label>
+<input type="text"
+pattern="[0-9]{9}"
+placeholder="Somente Números"
+required>
+
+<h3>-----------------------------------------ENDEREÇO--------------------------------------</h3>
+
+<label>Número:</label>
+<input type="text"
+placeholder="Somente Letras"
+required>
+
+<label>Complemento:</label>
+<input type="text"
+placeholder="Somente Letras"
+required>
+
+<label>Bairro:</label>
+<input type="text"
+placeholder="Somente Letras"
+required>
+
+<label>Cidade:</label>
+<input type="text"
+placeholder="Somente Letras"
+required>
+
+<label>UF:</label>
+<select required>
+    <option value="">Selecione</option>
+    <option>PE</option>
+    <option>AL</option>
+    <option>BA</option>
+    <option>CE</option>
+    <option>PB</option>
+</select>
+
+<label>Estado:</label>
+<select required>
+    <option value="">Selecione</option>
+    <option>Pernambuco</option>
+    <option>São Paulo</option>
+    <option>Rio de Janeiro</option>
+    <option>Bahia</option>
+</select>
+
+<label>CEP:</label>
+<input type="text"
+pattern="[0-9]{8}"
+placeholder="Somente Números"
+required>
+
+<h3>----------------------------------------CONTATO-----------------------------------------</h3>
+
+<label>Número de Telefone:</label>
+<input type="text"
+pattern="[0-9]{11}"
+placeholder="Somente Números"
+required>
+
+<label>Whatsapp:</label>
+<input type="password"
+placeholder="Somente Números"
+required>
+
+<label>E-mail:</label>
+<input type="email" 
+placeholder="Somente Números"
+required>
+
+<label>LinkedIn:</label>
+<input type="url"
+placeholder="Somente Letras"
+required>
+
+<h3>--------------------------------Informações(opcional)--------------------------------</h3>
+
+<label>Você possui CNH?</label>
+
+<div class="radio-group">
+    <input type="radio" name="cnh" required>
+    <label>Sim</label>
+
+    <input type="radio" name="cnh">
+    <label>Não</label>
+</div>
+
+<label>Categoria (se tiver CNH):</label>
+<select>
+    <option value="">Selecione</option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+    <option>D</option>
+    <option>A e B</option>
+    <option>A, B e C</option>
+    <option>Não tenho CNH</option>
+</select>
+
+<label>Tipo sanguíneo:</label>
+<select required>
+    <option value="">Selecione</option>
+    <option>A+</option>
+    <option>A-</option>
+    <option>B+</option>
+    <option>B-</option>
+    <option>AB+</option>
+    <option>AB-</option>
+    <option>O+</option>
+    <option>O-</option>
+</select>
+
+<label>Observações:</label>
+<textarea rows="5" 
+placeholder="Somente Letras"
+required>
+</textarea>
+
+<center>
+<button type="submit">Enviar Inscrição</button><br>
+<button type="reset">Limpar Cadastro</button>
+</center>
+<br><br>
+<center>
+<a href="index.html">Voltar</a>
+</center>
+</form>
+
+</body>
+</html>
