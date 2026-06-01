@@ -110,14 +110,13 @@ a{
 
 <!-- O FORMULÁRIO VAI PARA A PÁGINA agradecimento.html -->
 <form action="agradecimento.html">
-
-<h3>-------------------------------------Dados Pessoais------------------------------------</h3>
+<fieldset>
+<legend style="color: black">Dados Pessoais</legend>
 
 <label>Nome Completo:</label>
 <input type="text"
 placeholder="Somente Letras"
 required>
-
 
 
 <label>Data de nascimento:</label>
@@ -136,8 +135,10 @@ required>
 pattern="[0-9]{9}"
 placeholder="Somente Números"
 required>
-
-<h3>-----------------------------------------ENDEREÇO--------------------------------------</h3>
+</fieldset>
+<br>
+<fieldset>
+<legend>ENDEREÇO</legend>
 
 <label>Número:</label>
 <input type="text"
@@ -183,8 +184,10 @@ required>
 pattern="[0-9]{8}"
 placeholder="Somente Números"
 required>
-
-<h3>----------------------------------------CONTATO-----------------------------------------</h3>
+</fieldset>
+<br>
+<fieldset>
+<legend>CONTATO</legend>
 
 <label>Número de Telefone:</label>
 <input type="text"
@@ -193,7 +196,7 @@ placeholder="Somente Números"
 required>
 
 <label>Whatsapp:</label>
-<input type="text"
+<input type="password"
 placeholder="Somente Números"
 required>
 
@@ -206,8 +209,10 @@ required>
 <input type="url"
 placeholder="Somente Letras"
 required>
-
-<h3>--------------------------------Informações(opcional)--------------------------------</h3>
+</fieldset>
+<br>
+<fieldset>
+<legend>Informações(opcional)</legend>
 
 <label>Você possui CNH?</label>
 
@@ -249,14 +254,14 @@ required>
 placeholder="Somente Letras"
 required>
 </textarea>
-
+</fieldset>
 <center>
 <button type="submit">Enviar Inscrição</button><br>
 <button type="reset">Limpar Cadastro</button>
 </center>
 <br><br>
 <center>
-<a href="index.html">Voltar</a>
+<a href="file:///C:/Users/aluno.areias/Downloads/Html%20Teste.html">Voltar</a>
 </center>
 </form>
 
